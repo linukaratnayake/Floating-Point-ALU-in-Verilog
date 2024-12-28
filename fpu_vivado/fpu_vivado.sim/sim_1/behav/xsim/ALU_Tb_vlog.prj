@@ -1,14 +1,8 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/ALU.v" \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/Addition-Subtraction.v" \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/Converter.v" \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/Division.v" \
+verilog xil_defaultlib  --include "../../../../../ALU" --include "../../../../fpu_vivado.srcs/sources_1/imports/ALU" \
 "../../../../fpu_vivado.srcs/sources_1/imports/ALU/Iteration.v" \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/Multiplication.v" \
-"../../../../fpu_vivado.srcs/sources_1/imports/ALU/Priority Encoder.v" \
 
-sv xil_defaultlib  \
+sv xil_defaultlib  --include "../../../../../ALU" --include "../../../../fpu_vivado.srcs/sources_1/imports/ALU" \
 "../../../../fpu_vivado.srcs/sim_1/imports/ALU/ALU_Tb.sv" \
 
 # compile glbl module

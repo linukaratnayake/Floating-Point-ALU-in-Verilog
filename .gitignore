@@ -84,3 +84,9 @@
 !*.elf
 !*.bmm
 !*.xmp
+
+/fpu_vivado/fpu_vivado.runs
+/fpu_vivado/fpu_vivado.cache
+/fpu_vivado/fpu_vivado.sim/sim_1/behav/xsim
+/fpu_vivado/fpu_vivado.sim/sim_1/behav/xsim
+/fpu_vivado/fpu_vivado.sim
