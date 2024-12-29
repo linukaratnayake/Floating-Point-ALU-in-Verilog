@@ -60,42 +60,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/ALU/Priority Encoder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Priority Encoder.v"/>
-          <Attr Name="ImportTime" Val="1735360367"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ALU/Addition-Subtraction.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Addition-Subtraction.v"/>
-          <Attr Name="ImportTime" Val="1735360367"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ALU/Converter.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Converter.v"/>
-          <Attr Name="ImportTime" Val="1735360367"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ALU/Division.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Division.v"/>
-          <Attr Name="ImportTime" Val="1735360367"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ALU/Iteration.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Iteration.v"/>
@@ -105,12 +69,43 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/ALU/Priority Encoder.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Priority Encoder.v"/>
+          <Attr Name="ImportTime" Val="1735360367"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ALU/Addition-Subtraction.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Addition-Subtraction.v"/>
+          <Attr Name="ImportTime" Val="1735360367"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ALU/Converter.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Converter.v"/>
+          <Attr Name="ImportTime" Val="1735360367"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ALU/Division.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Division.v"/>
+          <Attr Name="ImportTime" Val="1735360367"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ALU/Multiplication.v">
-        <FileInfo>
+        <FileInfo SFType="VHeader">
           <Attr Name="ImportPath" Val="$PPRDIR/../ALU/Multiplication.v"/>
           <Attr Name="ImportTime" Val="1735360367"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -118,6 +113,36 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../ALU/ALU.v"/>
           <Attr Name="ImportTime" Val="1735360367"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/UART_Tx_Rx-main/buadrate.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/DELL/Downloads/UART_Tx_Rx-main/UART_Tx_Rx-main/buadrate.v"/>
+          <Attr Name="ImportTime" Val="1729183540"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/UART_Tx_Rx-main/receiver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/DELL/Downloads/UART_Tx_Rx-main/UART_Tx_Rx-main/receiver.v"/>
+          <Attr Name="ImportTime" Val="1729183540"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/UART_Tx_Rx-main/transmitter.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/DELL/Downloads/UART_Tx_Rx-main/UART_Tx_Rx-main/transmitter.v"/>
+          <Attr Name="ImportTime" Val="1729183540"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
