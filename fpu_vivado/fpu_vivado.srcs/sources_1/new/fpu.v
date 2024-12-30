@@ -37,11 +37,23 @@ module fpu(
     reg [NUM_BITS - 1:0] operand_a, operand_b;
     reg [NUM_BITS - 1:0] result;
     reg [3:0] operation;
+    reg exception, overflow, underflow;
 
     reg [NUM_BITS - 1:0] data_received;
 
     enum [2:0] {IDLE, GET_OP_A, GET_OP_B, GET_OP, DONE} state_t;
     state_t state = IDLE, next_state;
+
+    // Floating point ALU
+    ALU ALU_inst(
+        .a_operand(operand_a),
+        .b_operand(operand_b),
+        .Operation(operation),
+        .ALU_Output(result),
+        .Exception(exception),
+        .Overflow(overflow),
+        .Underflow(underflow)
+    );
 
     // Baudrate generator for UART communication
     baudrate baudrate_inst(
