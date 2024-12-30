@@ -22,7 +22,7 @@
 
 module receiver_wrapper
     # (
-        parameter NUM_BYTES = 4
+        parameter NUM_BYTES = 32
     )
     (
         input clk,
@@ -40,7 +40,7 @@ module receiver_wrapper
     parameter log2_NUM_BYTES = $clog2(NUM_BYTES);
     reg [log2_NUM_BYTES - 1:0] counter = 0;
 
-    enum [1:0] {IDLE, RECEIVE_BYTE, BYTE_RECEIVED, DATA_RECEIVED} state_t;
+    typedef enum logic [1:0] {IDLE, RECEIVE_BYTE, BYTE_RECEIVED, DATA_RECEIVED} state_t;
     state_t state = IDLE, next_state;
 
     // UART receiver

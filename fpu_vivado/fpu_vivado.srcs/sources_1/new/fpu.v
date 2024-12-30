@@ -30,7 +30,6 @@ module fpu(
 
     parameter NUM_BITS = 32;
 
-    wire clk, Rxclk_en, Txclk_en;
     wire [7:0] rx_data_out;
     wire receiver_ready;
 
@@ -41,7 +40,7 @@ module fpu(
 
     reg [NUM_BITS - 1:0] data_received;
 
-    enum [2:0] {IDLE, GET_OP_A, GET_OP_B, GET_OP, DONE} state_t;
+    typedef enum logic [2:0] {IDLE, GET_OP_A, GET_OP_B, GET_OP, DONE} state_t;
     state_t state = IDLE, next_state;
 
     // Floating point ALU
@@ -63,7 +62,7 @@ module fpu(
     );    
 
     // UART receiver wrapper
-    receiver_wrapper receiver_wrapper_inst #(4)
+    receiver_wrapper #(4) receiver_wrapper_inst
     (
         .clk(clk),
         .rx(rx),
